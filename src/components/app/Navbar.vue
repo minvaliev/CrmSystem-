@@ -2,7 +2,7 @@
     <nav class="navbar orange lighten-1">
         <div class="nav-wrapper">
             <div class="navbar-left">
-                <a href="#" @click.prevent="$emit('click')">
+                <a @click.prevent='$emit("menu-hide")'>
                     <i class="material-icons black-text">dehaze</i>
                 </a>
                 <span class="black-text">12.12.12</span>
@@ -11,9 +11,9 @@
             <ul class="right hide-on-small-and-down">
                 <li>
                     <a
-                            class="dropdown-trigger black-text"
-                            href="#"
-                            data-target="dropdown"
+                        class="dropdown-trigger black-text"
+                        href="#"
+                        data-target="dropdown"
                     >
                         USER NAME
                         <i class="material-icons right">arrow_drop_down</i>
@@ -38,12 +38,8 @@
     </nav>
 </template>
 
-<script>
-    export default {
-        name: "Navbar"
-    }
-</script>
-
 <style scoped>
-
+    .material-icons {
+        cursor: pointer;
+    }
 </style>
